@@ -9,13 +9,15 @@ main {
     display: flex;
     justify-content: center;
 }
-h1{
+
+h1 {
     text-align: center;
     font-style: italic;
     font-size: large;
 }
-p{
-    
+
+p {
+
     text-align: center;
     font-style: italic;
 }
@@ -39,7 +41,7 @@ p{
 
 .magic-card:hover {
     rotate: 360deg;
-    background-color:orange;
+    background-color: orange;
 
 }
 
@@ -71,5 +73,13 @@ p{
 
     100% {
         opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .magic-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
     }
 }
