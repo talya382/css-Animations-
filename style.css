@@ -1,0 +1,75 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    border: 1px green solid;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+}
+p{
+    
+    text-align: center;
+    font-style: italic;
+}
+
+.magic-card {
+    height: 450px;
+    width: 300px;
+    background-color: aquamarine;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    animation-name: myanima, gg;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-duration: 2s, 3s;
+    animation-iteration-count: infinite, 3;
+    animation-direction: alternate, normal;
+
+
+    transition: background-color 1s ease-in-out, rotate 1s ease-in-out;
+
+}
+
+.magic-card:hover {
+    rotate: 360deg;
+    background-color:orange;
+
+}
+
+@keyframes myanima {
+    0% {
+        transform: translateX(0);
+
+    }
+
+    50% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(-40px);
+
+    }
+}
+
+@keyframes gg {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
